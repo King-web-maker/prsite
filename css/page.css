@@ -19,7 +19,7 @@ p{
  * --------------------------------------- */
 #menu{
 	position:fixed;
-	top:35%;
+	top:50%;
 	left:0;
 	height: 40px;
 	z-index: 70;
@@ -206,13 +206,14 @@ div.bars{
 	margin-top: 40%;
 }
 #section2 div.pages div.introduce p{
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 #section2 p{
 	text-align: left;
+	font-size: 1rem;
 	right: 0;
 	opacity: 0.8;
-	margin-right: -30%;
+	margin-right: -25%;
 	margin-bottom: 1%;
 	color: #ffffff;
 }
@@ -415,25 +416,25 @@ figure.photo2.hover figcaption{
 #section4 div.pages img:nth-of-type(7),
 #section4 div.pages img:nth-of-type(10),
 #section4 div.pages img:last-of-type{
-	margin-left: 1%;
-	bottom: 15%;
+	margin-left: -10%;
+	bottom: 10%;
 }
 
 
 #section4 div.pages img:first-of-type{
-	left: 30%;
+	left: 20%;
 }
 #section4 div.pages img:nth-of-type(2){
-	left: 35%;
+	left: 30%;
 }
 #section4 div.pages img:nth-of-type(3){
 	left: 40%;
 }
 #section4 div.pages img:nth-of-type(8){
-	left: 45%;
+	left: 50%;
 }
 #section4 div.pages img:nth-of-type(9){
-	left: 50%;
+	left: 60%;
 }
 
 
@@ -441,22 +442,24 @@ figure.photo2.hover figcaption{
 	left: 30%;
 }
 #section4 div.pages img:nth-of-type(10){
-	left: 35%;
-}
-#section4 div.pages img:nth-of-type(5){
 	left: 40%;
 }
+#section4 div.pages img:nth-of-type(5){
+	left: 50%;
+}
 #section4 div.pages img:nth-of-type(6){
-	width: 4.7%;
-	left: 45%;
+	width: 10%;
+	bottom: 15%;
+	left: 70%;
 }
 #section4 div.pages img:nth-of-type(7){
-	width: 8.7%;
-	left: 49.7%;
+	width: 20%;
+	left: 70%;
 }
 #section4 div.pages img:last-of-type{
-	width: 8.3%;
-	left: 58%;
+	width: 20%;
+	bottom: 15%;
+	left: 80%;
 }
 
 .color{
@@ -1131,6 +1134,7 @@ div.bars{
 }
 #section2 p{
 	text-align: left;
+	font-size: 1.5rem;
 	right: 0;
 	opacity: 0.8;
 	margin-right: -30%;
