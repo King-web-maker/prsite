@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.pagepiling.min.js"></script>
+	<script src="js/jqbar.js"></script>
+	<link rel="stylesheet" href="css/jquery.pagepiling.css">
+	<link rel="stylesheet" href="css/import.css">
+
+	<title>Portfolio</title>
+
+    <script>
+		$(document).ready(function() {
+			/*
+			* Plugin intialization
+			*/
+	    	$('#pagepiling').pagepiling({
+	          	direction: 'horizontal',
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+			    sectionsColor: ['white', '#ee005a', '#2C3E50', '#39C'],
+			    navigation: {
+			    	'position': 'right',
+			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5']
+			   	},
+			    afterRender: function(){
+			    	$('#pp-nav').addClass('custom');
+			    },
+			    afterLoad: function(anchorLink, index){
+			    	if(index>1){
+			    		$('#pp-nav').removeClass('custom');
+			    	}else{
+			    		$('#pp-nav').addClass('custom');
+			    	}
+			    }
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			$('#bar-1').jqbar({ label: 'HTML5', barColor: '#ffffff',  value: 90, orientation: 'v' });
+			$('#bar-2').jqbar({ label: 'CSS3', barColor: '#838383', value: 85, orientation: 'v' });
+			$('#bar-3').jqbar({ label: 'Javascript', barColor: '#3d3d3d', value: 30, orientation: 'v' });
+			$('#bar-4').jqbar({ label: 'JQuery', barColor: '#3d3d3d', value: 30, orientation: 'v' });
+			$('#bar-5').jqbar({ label: 'Photoshop', barColor: '#ffffff', value: 90, orientation: 'v' });
+			$('#bar-6').jqbar({ label: 'Illustrator', barColor: '#838383', value: 80, orientation: 'v' });
+		});
+	</script>
+	<script>
+		function character() {
+			this.length = character.arguments.length;
+			for (i=0; i<this.length; i++) 
+				this[i+1] = character.arguments[i];
+		}
+		
+		function do_type() {                   //타자 효과를 내는 함수
+			if (x==viewstr.length+1) { 
+				for (n=0; n<100000; n++);         //루프를 계속 돌리기 위해 큰 수 사용한 것임
+				y+=1; 
+				if (y>3) y=0; 
+				document.getElementById("viewer").innerHTML=' '; 
+				viewstr = item[y]; 
+				x=0; 
+			} 
+			document.getElementById("viewer").innerHTML=viewstr.substring(0,x);   //화면에 문장 표시
+			x+=1; 
+			setTimeout("do_type()",150);
+		} 
+		</script>
+		<script>
+		var item = new character();
+		item[0]="Web UI/UX Designer    "; 
+		item[1]="Web Publisher    "; 
+		item[2]="Web Developer    "; 
+		item[3]="다음 슬라이드로 스크롤             ";
+		
+		var x=1, y=0, n=0; 
+		var viewstr = item[y]; 
+		
+		window.onload = function(){
+			do_type();
+		};
+		</script>
+
+</head>
+<body>
+	<ul id="menu">
+		<li data-menuanchor="page1" class="active"><a href="#page1">Intro</a></li>
+		<li data-menuanchor="page2"><a href="#page2">About Me</a></li>
+		<li data-menuanchor="page3"><a href="#page3">Portfolio</a></li>
+		<li data-menuanchor="page4"><a href="#page4">Artwork</a></li>
+		<li data-menuanchor="page5"><a href="#page5">Contact Me</a></li>
+	</ul>
+
+	<div id="pagepiling">
+	    <div class="section" id="section1">
+			<h1>Web<br>
+			Designer & Developer</h1>
+			<p id="viewer"></p>
+			<img src="images/rainbowbridge.jpg" alt="bg_main">
+		</div>
+
+
+	    <div class="section" id="section2">
+	    	<div class="pages">
+				<img src="images/aboutme0.jpg" alt="me">
+				<div class="bars">
+					<div id="bar-1"></div>
+					<div id="bar-2"></div>
+					<div id="bar-3"></div>
+					<div id="bar-4"></div>
+					<div id="bar-5"></div>
+					<div id="bar-6"></div>
+				</div>
+				<h1>About me</h1>
+				<div class="about">
+					<p>Name : 왕응식</p>
+					<p>Gender : 남성</p>
+					<p>Birthday : 1989.06.27</p>
+					<p>Department : 컴퓨터공학</p>
+					<p>Hobby : 볼링</p>
+				</div>
+				<div class="introduce">
+					<p>2019.07~2020.02</p>
+					<p>SBS아카데미컴퓨터학원</p>
+					<p>Artwork , Publish 교육수강</p>
+					<p>License : </p>
+					<p>수치제어밀링기능사</p>
+					<p>컴퓨터활용능력3급</p>
+					<p>1종보통운전면허</p>
+				</div>
+	    	</div>
+	    </div>
+	    <div class="section" id="section3">
+	    	<div class="pages">
+				<figure class="photo1">
+					<img src="images/mobileapp1.png" alt="mobileapp">
+					<figcaption>
+						<img src="images/1.png" alt="">
+						<a href="https://king-web-maker.github.io/mobileapp"></a>
+					</figcaption>
+				</figure>
+				<figure class="photo2">
+					<img src="images/guccishop.jpg" alt="guccishop">
+					<figcaption>
+						<img src="images/2.png" alt="">
+						<a href="https://king-web-maker.github.io/gucci"></a>
+					</figcaption>
+				</figure>
+	    		<h1>portfolio</h1>
+				<p>apppage</p>
+				<p>shoppingmall</p>
+	    		<div id="colors2">
+					<img src="images/colors2.png" alt="">
+				</div>
+	    		<div id="colors3">
+					<img src="images/colors3.png" alt="">
+				</div>
+	    	</div>
+		</div>
+		<div class="section" id="section4">
+			<div class="pages">
+				<img src="images/artwork1.png" alt="edc">
+				<img src="images/artwork2.png" alt="spyder">
+				<img src="images/artwork3.png" alt="rings">
+				<img src="images/artwork4.png" alt="time">
+				<img src="images/artwork5.png" alt="dragon">
+				<img src="images/artwork6.png" alt="youtube">
+				<img src="images/artwork7.png" alt="bottle">
+				<img src="images/artwork8.png" alt="poster">
+				<img src="images/artwork9.png" alt="arena">
+				<img src="images/artwork10.png" alt="music">
+				<img src="images/artwork11.png" alt="angel">
+				<h1>Artwork</h1>
+				<p>Mouse over = Expand</p>
+			</div>
+		</div>
+		<div class="section" id="section5">
+			<div class="pages">
+				<img src="images/kakaotalk.png" alt="">
+				<h1>Contact Me</h1>
+				<dl>
+					<dt>Wang Eungsik</dt>
+					<dd>Address. incheon, seo-gu <br>odongro-32 204-602 .22657</dd>
+					<dd>Tel.&nbsp;<a href="tel:+821021712141">010-2171-2141</a></dd>
+					<dd>Mail.&nbsp;<a href="mailto:roller@kakao.com">roller@kakao.com</a></dd>
+					<dd>SNS.&nbsp;<a href="http://instagram.com/drawing_hunterz">Instagram</a></dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

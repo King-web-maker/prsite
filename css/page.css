@@ -1,0 +1,1459 @@
+
+/* Custom CSS
+ * --------------------------------------- */
+ body{
+	font-family: 'NotoSans', Calibri, Arial, sans-serif;
+	color: #f2f2f2;
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.section{
+	text-align: center;
+}
+
+/* Menu
+ * --------------------------------------- */
+#menu{
+	position:fixed;
+	top:35%;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 10%;
+	padding: 0;
+	margin:0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+} 
+#menu *,
+#menu *:before{
+	transition: all 0.3s ease;
+}
+
+#menu li {
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	width: 7.5%;
+	margin-bottom: 10px;
+
+
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+	opacity: 0.8;
+}
+#menu li.active a:hover{
+	color: #000;
+	opacity: 1;
+
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+
+
+
+.pages p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+@media screen and (max-width:767px){
+	/* Section 1
+ * --------------------------------------- */
+ #section1 div.pp-tableCell{
+	width: 100%;
+	height: auto;
+	overflow-y: hidden;
+	background: url(../images/bg-pattern.png);
+	color: rgb(0, 0, 0);
+	position: relative;
+	}
+
+#section1 div h1{
+	color: #444;
+	z-index: 50;
+	position: absolute;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 5vw;
+	line-height: 5vw;
+	animation: background 2s linear infinite;
+	/* background: linear-gradient(90deg, rgb(221, 56, 27) 0%,rgb(250, 253, 59) 10%,rgb(49, 207, 72) 20%,rgb(51, 164, 216) 30%,rgb(134, 81, 184) 40%,rgba(84,16,67,1) 50%,rgba(28,58,63,1) 60%,rgba(82,175,183,1) 70%,rgba(78,170,76,1) 80%,rgb(235, 43, 139) 90%,rgb(239, 243, 188) 100%); */
+	background: linear-gradient(90deg, black, white,black);
+	background-size: 1000% 100%;
+	background-clip: content-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transform: translate(-50%, -50%);
+	top: 30%;
+	left: 50%;
+	width: 100%;
+}
+@keyframes background {
+	0%{background-position:0% 50%}
+	100%{background-position:100% 50%}
+  }
+
+
+#section1 img{
+	display: none;
+	opacity: 1;
+	z-index: 2;
+	width: 100%;
+}
+#section1 p{
+	margin-top: 30%;
+	font-family: 'PontanoSans', Arial,sans-serif;
+	font-weight: 300;
+	line-height: 0.5em;
+}
+
+
+/* Section 2
+ * --------------------------------------- */
+#section2 div.pp-tableCell{
+	width: 100%;
+	height: auto;
+	overflow-y: hidden;
+	background: url(../images/bg-pattern.png), linear-gradient(to right, #ffffff 50%, #000000 50%);
+	color: #fff;
+	position: relative;
+}
+.jqbar
+{
+	position: relative;
+	margin-top: 30%;
+	margin-left: 5%;
+	z-index: 1000;
+}
+.jqbar.vertical
+{
+    text-align: center;
+	display: inline-block;
+}
+.jqbar.vertical span
+{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+}
+.jqbar.vertical .bar-percent
+{
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    height: 20px;
+    margin-bottom: 5px;
+	width: 100%;
+}
+.jqbar.vertical .bar-level-wrapper
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.jqbar.vertical .bar-level
+{
+	position: absolute;
+}
+div.bars{
+	color: rgb(255, 255, 255);
+	margin-left: 50%;
+	display: none;
+}
+
+
+#section2 h1,
+#section2 p{
+	z-index: 10;
+	text-align: right;
+}
+#section2 h1{
+	position: absolute;
+	top: 3%;
+	left: 20%;
+	font-size: 3rem;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-shadow: 8px 0px 5px #3d3d3d;
+}
+#section2 div.pages div.about{
+	margin-top: 30%;
+	margin-right: 30%;
+}
+#section2 div.pages div.introduce{
+	margin-right: 30%;
+	margin-top: 40%;
+}
+#section2 div.pages div.introduce p{
+	font-size: 1.2rem;
+}
+#section2 p{
+	text-align: left;
+	right: 0;
+	opacity: 0.8;
+	margin-right: -30%;
+	margin-bottom: 1%;
+	color: #ffffff;
+}
+
+#section2 img{
+	position: absolute;
+	left: 3%;
+	top: 10%;
+	width: 47%;
+	border-radius: 10px;
+	z-index: 1;
+}
+
+
+/* Section 3
+ * --------------------------------------- */
+#section3 div.pp-tableCell{
+	background: url(../images/bg-pattern.png);
+	background-color: white;
+
+}
+#section3 p{
+	color: #757575;
+}
+figure.photo1{
+	position: absolute;
+	overflow: hidden;
+	margin: 10px;
+	min-width: 250px;
+	max-width: 450px;
+	width: 10%;
+	color: #000;
+	text-align: right;
+	background-color: #fff;
+	font-size: 16px;
+	margin-left: 35%;
+	margin-top: -30%;
+}
+figure.photo1 *{
+	box-sizing: border-box;
+	transition: all 0.45s ease;
+}
+figure.photo1 img{
+	width: 100%;
+	vertical-align: top;
+	backface-visibility: hidden;
+}
+figure.photo1 figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+}
+
+
+figure.photo1 a{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	
+}
+figure.photo1:hover > img,
+figure.photo1.hover > img{
+	filter: blur(30px);
+	transform: scale(1.2);
+	opacity: 0.15;
+}
+figure.photo1:hover figcaption,
+figure.photo1.hover figcaption{
+	opacity: 1;
+	transition-delay: 0.2s;
+}
+/* figure 2*/
+figure.photo2{
+	position: absolute;
+	overflow: hidden;
+	margin: 10px;
+	min-width: 250px;
+	max-width: 450px;
+	width: 10%;
+	color: #000;
+	text-align: right;
+	background-color: #fff;
+	font-size: 16px;
+	margin-left: 35%;
+	margin-top: 15%;
+
+
+}
+figure.photo2 *{
+	box-sizing: border-box;
+	transition: all 0.45s ease;
+}
+figure.photo2 img{
+	width: 100%;
+	vertical-align: top;
+	backface-visibility: hidden;
+}
+figure.photo2 figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+}
+
+
+figure.photo2 a{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+figure.photo2:hover > img,
+figure.photo2.hover > img{
+	filter: blur(30px);
+	transform: scale(1.2);
+	opacity: 0.15;
+}
+figure.photo2:hover figcaption,
+figure.photo2.hover figcaption{
+	opacity: 1;
+	transition-delay: 0.2s;
+}
+#section3 div.pages h1,
+#section3 div.pages p{
+	position: absolute;
+	text-transform: uppercase;
+}
+#section3 div.pages h1{
+	left: 12%;
+	top: 21%;
+	font-size: 4rem;
+	color: black;
+	text-shadow: -8px -8px 5px grey;
+}
+#section3 div.pages p:first-of-type{
+	left: 55%;
+	top: 30%;
+}
+#section3 div.pages p:last-of-type{
+	left: 46%;
+	top: 55%;
+}
+
+/* Section 4
+ * --------------------------------------- */
+#section4 div.pp-tableCell{
+	width: 100%;
+	height: auto;
+	overflow-y: hidden;
+	background: url(../images/bg-pattern.png), radial-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+	color: rgb(0, 0, 0);
+	position: relative;
+}
+#section4 h1{
+	margin-top: -20%;
+	font-size: 3rem;
+	text-transform: uppercase;
+	text-shadow: 10px 10px 1px rgb(117, 117, 117);
+}
+
+#section4 p{
+	margin-top: 1rem;
+	opacity: 0.6;
+}
+
+#section4 div.pages img{
+
+	position: absolute;
+	width: 20%;
+	margin-left: 7%;
+	margin-top: 2%;
+	transform: scale(1);
+	transition: all 0.3s ease-in-out;
+	overflow: hidden;
+}
+#section4 div.pages img:hover{
+	z-index: 2000;
+	transform: scale(5);
+}
+#section4 div.pages img:first-of-type,
+#section4 div.pages img:nth-of-type(2),
+#section4 div.pages img:nth-of-type(3),
+#section4 div.pages img:nth-of-type(8),
+#section4 div.pages img:nth-of-type(9){
+	top: 60%;
+}
+#section4 div.pages img:nth-of-type(4),
+#section4 div.pages img:nth-of-type(5),
+#section4 div.pages img:nth-of-type(6),
+#section4 div.pages img:nth-of-type(7),
+#section4 div.pages img:nth-of-type(10),
+#section4 div.pages img:last-of-type{
+	margin-left: 1%;
+	bottom: 15%;
+}
+
+
+#section4 div.pages img:first-of-type{
+	left: 30%;
+}
+#section4 div.pages img:nth-of-type(2){
+	left: 35%;
+}
+#section4 div.pages img:nth-of-type(3){
+	left: 40%;
+}
+#section4 div.pages img:nth-of-type(8){
+	left: 45%;
+}
+#section4 div.pages img:nth-of-type(9){
+	left: 50%;
+}
+
+
+#section4 div.pages img:nth-of-type(4){
+	left: 30%;
+}
+#section4 div.pages img:nth-of-type(10){
+	left: 35%;
+}
+#section4 div.pages img:nth-of-type(5){
+	left: 40%;
+}
+#section4 div.pages img:nth-of-type(6){
+	width: 4.7%;
+	left: 45%;
+}
+#section4 div.pages img:nth-of-type(7){
+	width: 8.7%;
+	left: 49.7%;
+}
+#section4 div.pages img:last-of-type{
+	width: 8.3%;
+	left: 58%;
+}
+
+.color{
+	position: absolute;
+	left: 20%;
+}
+
+
+/* Section 5
+ * --------------------------------------- */
+#section5 div.pp-tableCell{
+	width: 100%;
+	height: auto;
+	overflow-y: hidden;
+	background: url(../images/bg-pattern.png), linear-gradient(to right ,white 8%, black 8%);
+	color: #fff;
+	position: relative;
+}
+
+#section5 div h1{
+	color: #444;
+	z-index: 50;
+	position: absolute;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2rem;
+	line-height: 6vw;
+	animation: background 2s linear infinite;
+	/* background: linear-gradient(90deg, rgb(221, 56, 27) 0%,rgb(250, 253, 59) 10%,rgb(49, 207, 72) 20%,rgb(51, 164, 216) 30%,rgb(134, 81, 184) 40%,rgba(84,16,67,1) 50%,rgba(28,58,63,1) 60%,rgba(82,175,183,1) 70%,rgba(78,170,76,1) 80%,rgb(235, 43, 139) 90%,rgb(239, 243, 188) 100%); */
+	background: linear-gradient(90deg, black, white,black);
+	background-size: 1000% 100%;
+	background-clip: content-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transform: translate(-50%, -50%);
+	top: 15%;
+	left: 35%;
+	width: 100%;
+}
+@keyframes background {
+	0%{background-position:0% 50%}
+	100%{background-position:100% 50%}
+  }
+#section5 div.pages img{
+	position: absolute;
+	width: 10%;
+	right: 9%;
+	bottom: 10%;
+	
+	
+}
+
+#section5 div dl{
+	font-size: 1rem;
+	text-align: right;
+	margin-right: 10%;
+	margin-top: 80%;
+}
+#section5 div dl dt{
+	font-size: 2em;
+}
+#section5 div dl dd{
+	margin-bottom: 15px;
+}
+#section5 div dl dd a{
+	color: white;
+	text-decoration: none;
+}
+#section5 div dl dd a:hover{
+	color: grey;
+}
+
+
+/* Overwriting fullPage.js tooltip color
+* --------------------------------------- */
+#pp-nav.custom .pp-tooltip{
+	color: #AAA;
+}
+
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+	/* Section 1
+ * --------------------------------------- */
+ #section1 div.pp-tableCell{
+	width: 100%;
+	height: auto;
+	overflow-y: hidden;
+	background: url(../images/bg-pattern.png);
+	color: rgb(0, 0, 0);
+	position: relative;
+	}
+
+#section1 div h1{
+	color: #444;
+	z-index: 50;
+	position: absolute;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 5vw;
+	line-height: 5vw;
+	animation: background 2s linear infinite;
+	/* background: linear-gradient(90deg, rgb(221, 56, 27) 0%,rgb(250, 253, 59) 10%,rgb(49, 207, 72) 20%,rgb(51, 164, 216) 30%,rgb(134, 81, 184) 40%,rgba(84,16,67,1) 50%,rgba(28,58,63,1) 60%,rgba(82,175,183,1) 70%,rgba(78,170,76,1) 80%,rgb(235, 43, 139) 90%,rgb(239, 243, 188) 100%); */
+	background: linear-gradient(90deg, black, white,black);
+	background-size: 1000% 100%;
+	background-clip: content-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transform: translate(-50%, -50%);
+	top: 30%;
+	left: 50%;
+	width: 100%;
+}
+@keyframes background {
+	0%{background-position:0% 50%}
+	100%{background-position:100% 50%}
+  }
+
+
+#section1 img{
+	display: none;
+	opacity: 1;
+	z-index: 2;
+	width: 100%;
+}
+#section1 p{
+	margin-top: 30%;
+	font-family: 'PontanoSans', Arial,sans-serif;
+	font-weight: 300;
+	line-height: 0.5em;
+}
+
+
+/* Section 2
+ * --------------------------------------- */
+#section2 div.pp-tableCell{
+	width: 100%;
+	height: auto;
+	overflow-y: hidden;
+	background: url(../images/bg-pattern.png), linear-gradient(to right, #ffffff 50%, #000000 50%);
+	color: #fff;
+	position: relative;
+}
+.jqbar
+{
+	position: relative;
+	margin-top: 30%;
+	margin-left: 5%;
+	z-index: 1000;
+}
+.jqbar.vertical
+{
+    text-align: center;
+	display: inline-block;
+}
+.jqbar.vertical span
+{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+}
+.jqbar.vertical .bar-percent
+{
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    height: 20px;
+    margin-bottom: 5px;
+	width: 100%;
+}
+.jqbar.vertical .bar-level-wrapper
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.jqbar.vertical .bar-level
+{
+	position: absolute;
+}
+div.bars{
+	color: rgb(255, 255, 255);
+	margin-left: 50%;
+}
+
+
+#section2 h1,
+#section2 p{
+	z-index: 10;
+	text-align: right;
+}
+#section2 h1{
+	font-size: 5rem;
+	margin-top: -40%;
+	margin-right: 17%;
+	margin-bottom: 5%;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-shadow: 8px 0px 5px #3d3d3d;
+}
+#section2 div.pages div.about{
+	margin-top: 5%;
+	margin-right: 25%;
+}
+#section2 div.pages div.introduce{
+	margin-right: -5%;
+	margin-top: -10%;
+}
+#section2 div.pages div.introduce p{
+	font-size: 1.2rem;
+}
+#section2 p{
+	text-align: left;
+	right: 0;
+	opacity: 0.8;
+	margin-right: -30%;
+	margin-bottom: 1%;
+	color: #ffffff;
+}
+
+#section2 img{
+	position: absolute;
+	left: 15%;
+	top: 0;
+	width: 35%;
+	border-radius: 10px;
+	z-index: 1;
+}
+
+
+/* Section 3
+ * --------------------------------------- */
+#section3 div.pp-tableCell{
+	background: url(../images/bg-pattern.png);
+	background-color: white;
+
+}
+#section3 p{
+	color: #757575;
+}
+figure.photo1{
+	position: absolute;
+	overflow: hidden;
+	margin: 10px;
+	min-width: 300px;
+	max-width: 500px;
+	width: 100%;
+	color: #000;
+	text-align: right;
+	background-color: #fff;
+	font-size: 16px;
+	margin-left: 10%;
+	margin-top: -7%;
+}
+figure.photo1 *{
+	box-sizing: border-box;
+	transition: all 0.45s ease;
+}
+figure.photo1 img{
+	width: 100%;
+	vertical-align: top;
+	backface-visibility: hidden;
+}
+figure.photo1 figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+}
+
+
+figure.photo1 a{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	
+}
+figure.photo1:hover > img,
+figure.photo1.hover > img{
+	filter: blur(30px);
+	transform: scale(1.2);
+	opacity: 0.15;
+}
+figure.photo1:hover figcaption,
+figure.photo1.hover figcaption{
+	opacity: 1;
+	transition-delay: 0.2s;
+}
+/* figure 2*/
+figure.photo2{
+	position: absolute;
+	overflow: hidden;
+	margin: 10px;
+	min-width: 300px;
+	max-width: 500px;
+	width: 100%;
+	color: #000;
+	text-align: right;
+	background-color: #fff;
+	font-size: 16px;
+	margin-left: 37%;
+	margin-top: -7%;
+
+
+}
+figure.photo2 *{
+	box-sizing: border-box;
+	transition: all 0.45s ease;
+}
+figure.photo2 img{
+	width: 100%;
+	vertical-align: top;
+	backface-visibility: hidden;
+}
+figure.photo2 figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+}
+
+
+figure.photo2 a{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+figure.photo2:hover > img,
+figure.photo2.hover > img{
+	filter: blur(30px);
+	transform: scale(1.2);
+	opacity: 0.15;
+}
+figure.photo2:hover figcaption,
+figure.photo2.hover figcaption{
+	opacity: 1;
+	transition-delay: 0.2s;
+}
+#section3 div.pages h1,
+#section3 div.pages p{
+	position: absolute;
+	text-transform: uppercase;
+}
+#section3 div.pages h1{
+	left: 38%;
+	top: 18%;
+	color: black;
+	text-shadow: -8px -8px 5px grey;
+}
+#section3 div.pages p:first-of-type{
+	left: -2%;
+	top: 30%;
+}
+#section3 div.pages p:last-of-type{
+	left: 25%;
+	top: 30%;
+}
+
+/* Section 4
+ * --------------------------------------- */
+#section4 div.pp-tableCell{
+	width: 100%;
+	height: auto;
+	overflow-y: hidden;
+	background: url(../images/bg-pattern.png), radial-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+	color: rgb(0, 0, 0);
+	position: relative;
+}
+#section4 h1{
+	margin-top: 2rem;
+	text-transform: uppercase;
+	text-shadow: 10px 10px 1px rgb(117, 117, 117);
+}
+
+#section4 p{
+	margin-top: 1rem;
+	opacity: 0.6;
+}
+
+#section4 div.pages img{
+
+	position: absolute;
+	width: 5%;
+	margin-left: 7%;
+	margin-top: 2%;
+	transform: scale(1);
+	transition: all 0.3s ease-in-out;
+	overflow: hidden;
+}
+#section4 div.pages img:hover{
+	z-index: 2000;
+	transform: scale(5);
+}
+#section4 div.pages img:first-of-type,
+#section4 div.pages img:nth-of-type(2),
+#section4 div.pages img:nth-of-type(3),
+#section4 div.pages img:nth-of-type(8),
+#section4 div.pages img:nth-of-type(9){
+	top: 25%;
+}
+#section4 div.pages img:nth-of-type(4),
+#section4 div.pages img:nth-of-type(5),
+#section4 div.pages img:nth-of-type(6),
+#section4 div.pages img:nth-of-type(7),
+#section4 div.pages img:nth-of-type(10),
+#section4 div.pages img:last-of-type{
+	margin-left: 1%;
+	bottom: 25%;
+}
+
+
+#section4 div.pages img:first-of-type{
+	left: 30%;
+}
+#section4 div.pages img:nth-of-type(2){
+	left: 35%;
+}
+#section4 div.pages img:nth-of-type(3){
+	left: 40%;
+}
+#section4 div.pages img:nth-of-type(8){
+	left: 45%;
+}
+#section4 div.pages img:nth-of-type(9){
+	left: 50%;
+}
+
+
+#section4 div.pages img:nth-of-type(4){
+	left: 30%;
+}
+#section4 div.pages img:nth-of-type(10){
+	left: 35%;
+}
+#section4 div.pages img:nth-of-type(5){
+	left: 40%;
+}
+#section4 div.pages img:nth-of-type(6){
+	width: 4.7%;
+	left: 45%;
+}
+#section4 div.pages img:nth-of-type(7){
+	width: 8.7%;
+	left: 49.7%;
+}
+#section4 div.pages img:last-of-type{
+	width: 8.3%;
+	left: 58%;
+}
+
+.color{
+	position: absolute;
+	left: 20%;
+}
+
+
+/* Section 5
+ * --------------------------------------- */
+#section5 div.pp-tableCell{
+	width: 100%;
+	height: auto;
+	overflow-y: hidden;
+	background: url(../images/bg-pattern.png), linear-gradient(to right ,white 8%, black 8%);
+	color: #fff;
+	position: relative;
+}
+
+#section5 div h1{
+	color: #444;
+	z-index: 50;
+	position: absolute;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 5vw;
+	line-height: 5vw;
+	animation: background 2s linear infinite;
+	/* background: linear-gradient(90deg, rgb(221, 56, 27) 0%,rgb(250, 253, 59) 10%,rgb(49, 207, 72) 20%,rgb(51, 164, 216) 30%,rgb(134, 81, 184) 40%,rgba(84,16,67,1) 50%,rgba(28,58,63,1) 60%,rgba(82,175,183,1) 70%,rgba(78,170,76,1) 80%,rgb(235, 43, 139) 90%,rgb(239, 243, 188) 100%); */
+	background: linear-gradient(90deg, black, white,black);
+	background-size: 1000% 100%;
+	background-clip: content-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transform: translate(-50%, -50%);
+	top: 20%;
+	left: 30%;
+	width: 100%;
+}
+@keyframes background {
+	0%{background-position:0% 50%}
+	100%{background-position:100% 50%}
+  }
+#section5 div.pages img{
+	position: absolute;
+	width: 10%;
+	right: 9%;
+	bottom: 10%;
+	
+	
+}
+
+#section5 div dl{
+	font-size: 1.5em;
+	text-align: right;
+	margin-right: 20%;
+	margin-top: 30%;
+}
+#section5 div dl dt{
+	font-size: 2em;
+}
+#section5 div dl dd{
+	margin-bottom: 15px;
+}
+#section5 div dl dd a{
+	color: white;
+	text-decoration: none;
+}
+#section5 div dl dd a:hover{
+	color: grey;
+}
+
+
+/* Overwriting fullPage.js tooltip color
+* --------------------------------------- */
+#pp-nav.custom .pp-tooltip{
+	color: #AAA;
+}
+
+
+}
+
+
+@media screen and (min-width:1024px){
+	/* Section 1
+ * --------------------------------------- */
+ #section1 div.pp-tableCell{
+	width: 100%;
+	height: auto;
+	overflow-y: hidden;
+	background: url(../images/bg-pattern.png);
+	color: rgb(0, 0, 0);
+	position: relative;
+	}
+
+#section1 div h1{
+	color: #444;
+	z-index: 50;
+	position: absolute;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 5vw;
+	line-height: 5vw;
+	animation: background 2s linear infinite;
+	/* background: linear-gradient(90deg, rgb(221, 56, 27) 0%,rgb(250, 253, 59) 10%,rgb(49, 207, 72) 20%,rgb(51, 164, 216) 30%,rgb(134, 81, 184) 40%,rgba(84,16,67,1) 50%,rgba(28,58,63,1) 60%,rgba(82,175,183,1) 70%,rgba(78,170,76,1) 80%,rgb(235, 43, 139) 90%,rgb(239, 243, 188) 100%); */
+	background: linear-gradient(90deg, black, white,black);
+	background-size: 1000% 100%;
+	background-clip: content-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transform: translate(-50%, -50%);
+	top: 30%;
+	left: 50%;
+	width: 100%;
+}
+@keyframes background {
+	0%{background-position:0% 50%}
+	100%{background-position:100% 50%}
+  }
+
+
+#section1 img{
+	display: none;
+	opacity: 1;
+	z-index: 2;
+	width: 100%;
+}
+#section1 p{
+	margin-top: 30%;
+	font-family: 'PontanoSans', Arial,sans-serif;
+	font-weight: 300;
+	line-height: 0.5em;
+}
+
+
+/* Section 2
+ * --------------------------------------- */
+#section2 div.pp-tableCell{
+	width: 100%;
+	height: auto;
+	overflow-y: hidden;
+	background: url(../images/bg-pattern.png), linear-gradient(to right, #ffffff 50%, #000000 50%);
+	color: #fff;
+	position: relative;
+}
+.jqbar
+{
+	position: relative;
+	margin-top: 30%;
+	margin-left: 5%;
+	z-index: 1000;
+}
+.jqbar.vertical
+{
+    text-align: center;
+	display: inline-block;
+}
+.jqbar.vertical span
+{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+}
+.jqbar.vertical .bar-percent
+{
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    height: 20px;
+    margin-bottom: 5px;
+	width: 100%;
+}
+.jqbar.vertical .bar-level-wrapper
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.jqbar.vertical .bar-level
+{
+	position: absolute;
+}
+div.bars{
+	color: rgb(255, 255, 255);
+	margin-left: 50%;
+}
+
+
+#section2 h1,
+#section2 p{
+	z-index: 10;
+	text-align: right;
+}
+#section2 h1{
+	font-size: 5rem;
+	margin-top: -40%;
+	margin-right: 17%;
+	margin-bottom: 5%;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-shadow: 8px 0px 5px #3d3d3d;
+}
+#section2 div.pages div.about{
+	margin-top: 5%;
+	margin-right: 25%;
+}
+#section2 div.pages div.introduce{
+	margin-right: -5%;
+	margin-top: -10%;
+}
+#section2 div.pages div.introduce p{
+	font-size: 1.2rem;
+}
+#section2 p{
+	text-align: left;
+	right: 0;
+	opacity: 0.8;
+	margin-right: -30%;
+	margin-bottom: 1%;
+	color: #ffffff;
+}
+
+#section2 img{
+	position: absolute;
+	left: 15%;
+	top: 0;
+	width: 35%;
+	border-radius: 10px;
+	z-index: 1;
+}
+
+
+/* Section 3
+ * --------------------------------------- */
+#section3 div.pp-tableCell{
+	background: url(../images/bg-pattern.png);
+	background-color: white;
+
+}
+#section3 p{
+	color: #757575;
+}
+figure.photo1{
+	position: absolute;
+	overflow: hidden;
+	margin: 10px;
+	min-width: 300px;
+	max-width: 500px;
+	width: 100%;
+	color: #000;
+	text-align: right;
+	background-color: #fff;
+	font-size: 16px;
+	margin-left: 20%;
+	margin-top: -7%;
+}
+figure.photo1 *{
+	box-sizing: border-box;
+	transition: all 0.45s ease;
+}
+figure.photo1 img{
+	width: 100%;
+	vertical-align: top;
+	backface-visibility: hidden;
+}
+figure.photo1 figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+}
+
+
+figure.photo1 a{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	
+}
+figure.photo1:hover > img,
+figure.photo1.hover > img{
+	filter: blur(30px);
+	transform: scale(1.2);
+	opacity: 0.15;
+}
+figure.photo1:hover figcaption,
+figure.photo1.hover figcaption{
+	opacity: 1;
+	transition-delay: 0.2s;
+}
+/* figure 2*/
+figure.photo2{
+	position: absolute;
+	overflow: hidden;
+	margin: 10px;
+	min-width: 300px;
+	max-width: 500px;
+	width: 100%;
+	color: #000;
+	text-align: right;
+	background-color: #fff;
+	font-size: 16px;
+	margin-left: 50%;
+	margin-top: -7%;
+
+
+}
+figure.photo2 *{
+	box-sizing: border-box;
+	transition: all 0.45s ease;
+}
+figure.photo2 img{
+	width: 100%;
+	vertical-align: top;
+	backface-visibility: hidden;
+}
+figure.photo2 figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+}
+
+
+figure.photo2 a{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+figure.photo2:hover > img,
+figure.photo2.hover > img{
+	filter: blur(30px);
+	transform: scale(1.2);
+	opacity: 0.15;
+}
+figure.photo2:hover figcaption,
+figure.photo2.hover figcaption{
+	opacity: 1;
+	transition-delay: 0.2s;
+}
+#section3 div.pages h1,
+#section3 div.pages p{
+	position: absolute;
+	text-transform: uppercase;
+}
+#section3 div.pages h1{
+	left: 38%;
+	top: 18%;
+	color: black;
+	text-shadow: -8px -8px 5px grey;
+}
+#section3 div.pages p:first-of-type{
+	left: 8%;
+	top: 30%;
+}
+#section3 div.pages p:last-of-type{
+	left: 38%;
+	top: 30%;
+}
+
+/* Section 4
+ * --------------------------------------- */
+#section4 div.pp-tableCell{
+	width: 100%;
+	height: auto;
+	overflow-y: hidden;
+	background: url(../images/bg-pattern.png), radial-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+	color: rgb(0, 0, 0);
+	position: relative;
+}
+#section4 h1{
+	margin-top: 2rem;
+	text-transform: uppercase;
+	text-shadow: 10px 10px 1px rgb(117, 117, 117);
+}
+
+#section4 p{
+	margin-top: 1rem;
+	opacity: 0.6;
+}
+
+#section4 div.pages img{
+
+	position: absolute;
+	width: 5%;
+	margin-left: 7%;
+	margin-top: 2%;
+	transform: scale(1);
+	transition: all 0.3s ease-in-out;
+	overflow: hidden;
+}
+#section4 div.pages img:hover{
+	z-index: 2000;
+	transform: scale(5);
+}
+#section4 div.pages img:first-of-type,
+#section4 div.pages img:nth-of-type(2),
+#section4 div.pages img:nth-of-type(3),
+#section4 div.pages img:nth-of-type(8),
+#section4 div.pages img:nth-of-type(9){
+	top: 25%;
+}
+#section4 div.pages img:nth-of-type(4),
+#section4 div.pages img:nth-of-type(5),
+#section4 div.pages img:nth-of-type(6),
+#section4 div.pages img:nth-of-type(7),
+#section4 div.pages img:nth-of-type(10),
+#section4 div.pages img:last-of-type{
+	margin-left: 1%;
+	bottom: 25%;
+}
+
+
+#section4 div.pages img:first-of-type{
+	left: 30%;
+}
+#section4 div.pages img:nth-of-type(2){
+	left: 35%;
+}
+#section4 div.pages img:nth-of-type(3){
+	left: 40%;
+}
+#section4 div.pages img:nth-of-type(8){
+	left: 45%;
+}
+#section4 div.pages img:nth-of-type(9){
+	left: 50%;
+}
+
+
+#section4 div.pages img:nth-of-type(4){
+	left: 30%;
+}
+#section4 div.pages img:nth-of-type(10){
+	left: 35%;
+}
+#section4 div.pages img:nth-of-type(5){
+	left: 40%;
+}
+#section4 div.pages img:nth-of-type(6){
+	width: 4.7%;
+	left: 45%;
+}
+#section4 div.pages img:nth-of-type(7){
+	width: 8.7%;
+	left: 49.7%;
+}
+#section4 div.pages img:last-of-type{
+	width: 8.3%;
+	left: 58%;
+}
+
+.color{
+	position: absolute;
+	left: 20%;
+}
+
+
+/* Section 5
+ * --------------------------------------- */
+#section5 div.pp-tableCell{
+	width: 100%;
+	height: auto;
+	overflow-y: hidden;
+	background: url(../images/bg-pattern.png), linear-gradient(to right ,white 8%, black 8%);
+	color: #fff;
+	position: relative;
+}
+
+#section5 div h1{
+	color: #444;
+	z-index: 50;
+	position: absolute;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 5vw;
+	line-height: 5vw;
+	animation: background 2s linear infinite;
+	/* background: linear-gradient(90deg, rgb(221, 56, 27) 0%,rgb(250, 253, 59) 10%,rgb(49, 207, 72) 20%,rgb(51, 164, 216) 30%,rgb(134, 81, 184) 40%,rgba(84,16,67,1) 50%,rgba(28,58,63,1) 60%,rgba(82,175,183,1) 70%,rgba(78,170,76,1) 80%,rgb(235, 43, 139) 90%,rgb(239, 243, 188) 100%); */
+	background: linear-gradient(90deg, black, white,black);
+	background-size: 1000% 100%;
+	background-clip: content-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transform: translate(-50%, -50%);
+	top: 20%;
+	left: 30%;
+	width: 100%;
+}
+@keyframes background {
+	0%{background-position:0% 50%}
+	100%{background-position:100% 50%}
+  }
+#section5 div.pages img{
+	position: absolute;
+	width: 10%;
+	right: 9%;
+	bottom: 10%;
+	
+	
+}
+
+#section5 div dl{
+	font-size: 1.5em;
+	text-align: right;
+	margin-right: 20%;
+	margin-top: 30%;
+}
+#section5 div dl dt{
+	font-size: 2em;
+}
+#section5 div dl dd{
+	margin-bottom: 15px;
+}
+#section5 div dl dd a{
+	color: white;
+	text-decoration: none;
+}
+#section5 div dl dd a:hover{
+	color: grey;
+}
+
+
+/* Overwriting fullPage.js tooltip color
+* --------------------------------------- */
+#pp-nav.custom .pp-tooltip{
+	color: #AAA;
+}
+
+
+}
